@@ -1,0 +1,46 @@
+body
+{
+    width: 1673px;
+    margin: 0 auto;
+
+    background-color: white;
+}
+.header
+{
+    z-index: 1;
+
+    width: 100%;
+    height: 648px;
+
+    background-image: url(../../assets/img/header/sochi-2258855.png);
+}
+.header__logo
+{
+    margin-top: 21px;
+    margin-left: 789px;
+}
+
+.header__subtitle
+{
+    font-family: 'Roboto Slab';
+    font-size: 100px;
+    font-weight: 400;
+
+    margin-top: 16px;
+    margin-left: -2px;
+
+    text-align: center;
+    letter-spacing: -3px;
+
+    color: #0d3351;
+}
+.header__button
+{
+    margin-top: 30px;
+    margin-left: 735px;
+}
+.decor-line{
+    z-index: 2;
+    margin-left: 802px;
+    margin-top: -178px;
+}
