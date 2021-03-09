@@ -1,0 +1,21 @@
+
+.support
+{
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+
+    margin-top: -39px;
+    margin-left: 1264px;
+
+    letter-spacing: 1px;
+
+    color: #0d3351;
+}
+.support::after
+{
+    font-size: 9px;
+
+    content: 'Круглосуточная поддежка';
+}
