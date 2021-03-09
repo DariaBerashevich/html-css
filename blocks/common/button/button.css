@@ -1,0 +1,25 @@
+.button
+{
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+
+    width: 202px;
+    height: 47px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: white;
+    border: none;
+    background-color: #33c7fd;
+}
+.button:hover
+{
+    background-color: #13b0e9;
+}
+.button:active
+{
+    border: none;
+    background-color: #64d6ff;
+}
