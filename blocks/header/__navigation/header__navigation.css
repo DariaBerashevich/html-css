@@ -1,10 +1,8 @@
-.header__navigation
-{
+.header__navigation {
     margin-top: 7px;
     margin-left: 863px;
 }
-.navigation__item
-{
+.navigation__item {
     font-family: 'Raleway';
     font-size: 13px;
     font-weight: 400;
@@ -19,20 +17,17 @@
 
     color: #0d3351;
 }
-.navigation__item::after
-{
+.navigation__item::after {
     padding-left: 7px;
 
     content: url(../../../assets/img/header/03.svg);
 }
-.navigation__item_account::before
-{
+.navigation__item_account::before {
     padding-right: 9px;
 
     content: url(../../../assets/img/header/user.svg);
 }
-.navigation__item_currency::before
-{
+.navigation__item_currency::before {
     padding-right: 10px;
 
     content: url(../../../assets/img/header/Р.svg);
