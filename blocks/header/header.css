@@ -1,5 +1,5 @@
 body {
-    width: 1673px;
+    max-width: 1673px;
     margin: 0 auto;
 
     background-color: white;
@@ -17,25 +17,31 @@ body {
     margin-left: 789px;
 }
 
+.header___title{
+margin-top:-2px;
+}
+
 .header__subtitle {
     font-family: 'Roboto Slab','Arial', sans-serif;
     font-size: 100px;
     font-weight: 400;
 
-    margin-top: 16px;
-    margin-left: -2px;
+    margin-top: -13px;
+    margin-bottom:0;
 
     text-align: center;
     letter-spacing: -3px;
+    text-transform:uppercase;
 
     color: #0d3351;
 }
 .header__button {
-    margin-top: 30px;
+    margin-top: 31px;
     margin-left: 735px;
 }
 .decor-line {
     z-index: 2;
+    position:absolute;
     margin-left: 802px;
     margin-top: -178px;
 }
