@@ -1,6 +1,5 @@
 
-.support
-{
+.support {
     font-family: 'Raleway';
     font-size: 14px;
     font-weight: 700;
@@ -13,8 +12,7 @@
 
     color: #0d3351;
 }
-.support::after
-{
+.support::after {
     font-size: 9px;
 
     content: 'Круглосуточная поддежка';
