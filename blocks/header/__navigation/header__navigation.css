@@ -1,16 +1,12 @@
-.header__navigation {
-    margin-top: 6px;
-    margin-left: 866px;
-}
 .navigation__item {
     font-family: 'Raleway','Arial', sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 48px;
 
-    display: inline-block;
+    margin-left: 18px;
 
-    margin-left: 21px;
+    display: inline-block;
 
     text-align: center;
     letter-spacing: 1px;

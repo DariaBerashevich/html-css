@@ -12,6 +12,17 @@ body {
 
     background-image: url(../../assets/img/header/sochi-2258855.png);
 }
+.header__container {
+    height:65px;
+    max-width:1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__support {
+    margin-left: 34px;
+}
 .header__logo {
     margin: 21px auto 0;
     display: block;
@@ -34,8 +45,8 @@ margin-top:4px;
     color: #0d3351;
 }
 .header__button {
-    margin-top: 33px;
     display: block;
+    margin-top: 33px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,4 +60,9 @@ margin-top:4px;
     left: 0;
     right: 10px;
     top:470px;
+}
+.header__info {
+    display: flex;
+    align-items: center;
+    margin-top:31px;
 }
