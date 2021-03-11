@@ -1,0 +1,20 @@
+
+.support {
+    font-family: 'Raleway','Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+
+    letter-spacing: 1px;
+
+    color: #0d3351;
+}
+.support::after {
+    font-size: 9px;
+
+    content: 'Круглосуточная поддежка';
+}
+.support__phone-number{
+    text-decoration: none;
+    color: #0d3351;
+}

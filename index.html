@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="ru">
+    <meta charset="UTF-8"> 
+    <link href="reset.css" rel="stylesheet">
+    <link href="blocks/header/header.css" rel="stylesheet">
+    <link href="blocks/header/__burger-menu/header__burger-menu.css" rel="stylesheet">
+    <link href="blocks/header/__navigation/header__navigation.css" rel="stylesheet">
+    <link href="blocks/common/button/button.css" rel="stylesheet">
+    <link href="blocks/common/support/support.css" rel="stylesheet">
+    <link href="blocks/common/title/title.css" rel="stylesheet">
+    <link href="blocks/main/main.css" rel="stylesheet">
+    <link href="blocks/catalog/catalog.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <title>Морские прогулки</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+        <div class="header__burger-menu">
+            <button class="burger-menu__icon"><img src="assets/img/header/menu.svg"
+                alt="Иконка бургер меню"></button>
+        </div>
+        <div class="header__info">
+        <nav class="header__navigation navigation">
+            <button class="navigation__item navigation__item_account">Личный кабинет</button>
+            <button class="navigation__item navigation__item_currency">Рубль</button>
+            <button class="navigation__item navigation__item_language">Ru</button>
+        </nav>
+        <div class="header__support support">
+            <div><a class="support__phone-number" href="tel:88005006105">8 800 500-61-05</a></div>
+        </div>
+    </div>
+    </div>
+        <img class="header__logo"  src="assets/img/header/logo.svg" alt="Логотип сайта">
+        <h2 class="header__title title">Морские прогулки</h2>   
+        <h1 class="header__subtitle">По чёрному морю</h1>       
+        <button class="header__button button">Выбрать круиз</button>
+    </header>
+    <main class="main"> 
+        <img class="decor-line" src='assets/img/header/line.svg' alt="извилистая линия">
+        <h3 class="main__title title">Каталог круизов</h3>  
+        <button class="main__sort">Сортировать круизы по цене</button> 
+        <div class="main__catalog catalog">
+            <div class="catalog__item item catalog__item_on-sale"></div>
+            <div class="catalog__item item catalog__item_on-sale"></div>
+            <div class="catalog__item item catalog__item_on-sale"></div>
+            <div class="catalog__item item"></div>
+            <div class="catalog__item item"></div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>
