@@ -13,22 +13,18 @@ body {
     background-image: url(../../assets/img/header/sochi-2258855.png);
 }
 .header__logo {
-    margin-top: 21px;
+    margin: 21px auto 0;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
-
-.header__title{
-margin-top:2px;
+.header__title {
+margin-top:4px;
 }
-
 .header__subtitle {
     font-family: 'Roboto Slab','Arial', sans-serif;
     font-size: 100px;
     font-weight: 400;
 
-    margin-top: -13px;
+    margin-top: 16px;
     margin-bottom:0;
 
     text-align: center;
@@ -52,6 +48,5 @@ margin-top:2px;
 
     left: 0;
     right: 10px;
-   
-    margin-top: -179px;
+    top:470px;
 }
