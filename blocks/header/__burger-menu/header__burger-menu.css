@@ -1,8 +1,10 @@
 .header__burger-menu {
     width: 22px;
     height: 16px;
+    padding-left:260px;
 }
 .burger-menu__icon {
-    margin-top: 34px;
-    margin-left: 266px;
+    margin-top: 33px;
+    background-color: transparent;
+    border: none;
 }
