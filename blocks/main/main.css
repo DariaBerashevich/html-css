@@ -31,5 +31,5 @@
 .main__sort::after {
     padding-left: 7px; 
     
-    content: url(../../assets/img/catalog/03.svg);
+    /*content: url(../../assets/img/catalog/03.svg);*/
 }
