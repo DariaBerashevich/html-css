@@ -12,6 +12,7 @@
     <link href="blocks/common/title/title.css" rel="stylesheet">
     <link href="blocks/main/main.css" rel="stylesheet">
     <link href="blocks/catalog/catalog.css" rel="stylesheet">
+    <link href="blocks/main/__catalog/main__catalog.css" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap"
@@ -48,19 +49,19 @@
     <main class="main">
         <img class="decor-line" src='assets/img/header/line.svg' alt="извилистая линия">
         <h3 class="main__title title">Каталог круизов</h3>
-        <button class="main__sort">Сортировать круизы по цене</button>
-        <div class="main__catalog catalog"><a name="main"></a>
+        <button class="main__sort">Сортировать круизы по цене</button><a name="main"></a>
+        <div class="main__catalog catalog">
             <div class="catalog__item item catalog__item_bestseller">
                 <a href="#"><img class="item__photo" src="assets/img/main/catalog/item1.svg"
                         alt="побережье Анапы"></a>
                 <div class="item__about about">
                     <div class="about__name"><a href="#"> Морской круиз в Анапу</a></div>
-                    <div class="about__discription">
-                        <p>
-                            <strong>Маршрут:</strong> Сочи-Лазаревское-Геленджик-Анапа</a>
+                    <div class="about__discription discription">
+                        <p class="discription__route">
+                            <b>Маршрут: </b> Сочи-Лазаревское-Геленджик-Анапа</a>
                         </p>
-                        <p>
-                            <strong>Продолжительность:</strong> 10 ч. 0 мин.</a>
+                        <p class="discription__duration">
+                            <b>Продолжительность: </b> 10 ч. 0 мин.</a>
                         </p>
                     </div>
                     <div class="about__price">49 000 руб.</div>
@@ -70,12 +71,12 @@
                 <a href="#"> <img class="item__photo" src="assets/img/main/catalog/item2.svg"></a>
                 <div class="item__about about">
                     <div class="about__name"><a href="#"> Обзорная морская прогулка с экскурсией</a></div>
-                    <div class="about__discription">
-                        <p>
-                            <strong>Маршрут:</strong> Сочи-Адлер-Сочи(без высадки)</a>
+                    <div class="about__discription discription">
+                        <p class="discription__route">
+                            <b>Маршрут:</b> Сочи-Адлер-Сочи(без высадки)</a>
                         </p>
-                        <p>
-                            <strong>Продолжительность:</strong> 1 ч. 0 мин.</a>
+                        <p class="discription__duration">
+                            <b>Продолжительность:</b> 1 ч. 0 мин.</a>
                         </p>
                     </div>
                     <div class="about__price about__price_stock">5 000 руб.</div>
@@ -84,13 +85,13 @@
             <div class="catalog__item item catalog__item_on-sale">
                 <a href="#"> <img class="item__photo" src="assets/img/main/catalog/item3.svg"></a>
                 <div class="item__about about">
-                    <div class="about__name"><a href="#"> Морская прогулка Геленджик</a></div>
-                    <div class="about__discription">
-                        <p>
-                            <strong>Маршрут:</strong> Сочи-Туапсе-Геленджик</a>
+                    <div class="about__name"><a href="#"> Морская прогулка в Геленджик</a></div>
+                    <div class="about__discription discription">
+                        <p class="discription__route">
+                            <b>Маршрут:</b> Сочи-Туапсе-Геленджик</a>
                         </p>
-                        <p>
-                            <strong>Продолжительность:</strong> 12 ч. 30 мин.</a>
+                        <p class="discription__duration">
+                            <b>Продолжительность:</b> 12 ч. 30 мин.</a>
                         </p>
                     </div>
                     <div class="about__price about__price_on-sale">7 000 руб.</div>
@@ -100,12 +101,12 @@
                 <a href="#"> <img class="item__photo" src="assets/img/main/catalog/item4.svg"></a>
                 <div class="item__about about">
                     <div class="about__name"><a href="#"> Морской круиз в Новороссийск</a></div>
-                    <div class="about__discription">
-                        <p>
-                            <strong>Маршрут:</strong> Сочи-Геленджик-Новороссийск-Геленджик-Сочи
+                    <div class="about__discription discription">
+                        <p class="discription__route">
+                            <b>Маршрут:</b> Сочи-Геленджик-Новороссийск-Геленджик-Сочи
                         </p>
-                        <p>
-                            <strong>Продолжительность:</strong> 13 ч. 0 мин.
+                        <p class="discription__duration">
+                            <b>Продолжительность:</b> 13 ч. 0 мин.
                         </p>
                     </div>
                     <div class="about__price">14 800 руб.</div>
@@ -115,12 +116,12 @@
                 <a href="#"> <img class="item__photo" src="assets/img/main/catalog/item5.svg"></a>
                 <div class="item__about about">
                     <div class="about__name"><a href="#"> Морская прогулка в Абрау-Дюрсо</a></div>
-                    <div class="about__discription">
-                        <p>
-                            <strong>Маршрут:</strong> Сочи-Абрау-Дюрсо
+                    <div class="about__discription discription">
+                        <p class="discription__route">
+                            <b>Маршрут:</b> Сочи-Абрау-Дюрсо
                         </p>
-                        <p>
-                            <strong>Продолжительность:</strong> 11 ч. 0 мин.
+                        <p class="discription__duration">
+                            <b>Продолжительность:</b> 11 ч. 0 мин.
                         </p>
                     </div>
                     <div class="about__price">14 800 руб.</div>
