@@ -47,5 +47,5 @@
 .main__button::after {
     padding-left: 7px;
 
-    content: url(../../assets/img/main/catalog/04.svg);
+   content: url(../../assets/img/main/catalog/04.svg);
 }
