@@ -31,5 +31,21 @@
 .main__sort::after {
     padding-left: 7px; 
     
-    /*content: url(../../assets/img/catalog/03.svg);*/
+    content: url(../../assets/img/catalog/03.svg);
+}
+.main__catalog {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:35px;
+}
+.main__button {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:24px;
+}
+.main__button::after {
+    padding-left: 7px;
+
+   content: url(../../assets/img/main/catalog/04.svg);
 }
