@@ -44,6 +44,9 @@
     
     pointer-events: none;
 }
+.item__photo_tablet{
+    display: none;
+}
 .item__about {
     width: 554px;
     height: 182px;
@@ -93,7 +96,7 @@
 
     letter-spacing: 1.5px;
 
-    color: #0d3351;;
+    color: #0d3351;
 }
 .about__price_on-sale::after {
     font-family: 'Roboto Slab','Arial',sans-serif;
@@ -108,7 +111,7 @@
     text-decoration: line-through;
     letter-spacing: 1px;
 
-    color: #767d83;;
+    color: #767d83;
 }
 .about__price_stock::after {
     font-family: 'Roboto Slab','Arial',sans-serif;
@@ -123,5 +126,67 @@
     text-decoration: line-through;
     letter-spacing: 1px;
 
-    color: #767d83;;
+    color: #767d83;
+}
+@media (min-width:301px) and (max-width:1300px) {
+     .item__photo_tablet{
+        display: block;
+    }
+    .item__photo_dekstop{
+        display: none;
+    }
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:720px;
+        height:1060px;
+    }
+    .catalog__item:nth-child(2){
+        order: 1;
+    }
+    .catalog__item:nth-child(4){
+        order: 1;
+    }
+    .catalog__item:nth-child(5) {
+        display: none;
+    }
+    .item__about {
+        width:345px;
+        height:228px;
+    }
+    .catalog__item {
+        margin-bottom: 8px;
+    }
+    .catalog__item_bestseller::before {
+        margin-left:223px;
+        margin-top:-7px;
+    
+        content: url(../../../assets/img/main/catalog/bestseller_tag.png);
+    }
+    .catalog__item_stock::before {
+        margin-left:223px;
+        margin-top:-7px; 
+    }
+    .catalog__item_on-sale::before {
+        margin-left:223px;
+        margin-top:-7px;
+    
+        content: url(../../../assets/img/main/catalog/sale_tag.png);
+    }
+    .about__name {
+
+    }
+    .about__discription {
+      
+    }
+    .about__price {
+       
+    }
+    .about__price_on-sale::after {
+      
+    }
+    .about__price_stock::after {
+              
+    }
 }

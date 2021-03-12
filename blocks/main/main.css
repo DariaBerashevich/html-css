@@ -49,3 +49,20 @@
 
    content: url(../../assets/img/main/catalog/04.svg);
 }
+@media (min-width:301px) and (max-width:1300px) {
+    .main {
+    min-height: 1321px;
+    }
+    .main__title {
+    padding-top:48px;
+    }
+    .main__sort {
+    margin-top:-11px;
+    }
+    .main__catalog {
+    margin-top: 26px;
+    }
+    .main__button {
+    margin-top:6px;
+    }
+}
