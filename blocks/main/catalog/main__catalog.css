@@ -1,0 +1,120 @@
+.catalog {
+    display: grid;
+
+    width: 1140px;
+    height: 1056px;
+   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 18px 30px;
+    grid-template-areas:
+     "first ."
+     "first ."
+     ". .";
+}
+.catalog__item_bestseller {
+    grid-area: first;
+   
+    z-index: 1;
+}
+.catalog__item_bestseller::before {
+    position: absolute;
+    margin-left:418px;
+    margin-top:-7px;
+
+    content: url(../../../assets/img/main/catalog/bestseller_tag.png);
+}
+.catalog__item_stock::before {
+    position: absolute;
+    margin-left:418px;
+    margin-top:-7px; 
+
+    content: url(../../../assets/img/main/catalog/stock_tag.png);
+}
+.catalog__item_on-sale::before {
+    position: absolute;
+    margin-left:418px;
+    margin-top:-7px;
+    content: url(../../../assets/img/main/catalog/sale_tag.png);
+}
+.item__about {
+    width: 554px;
+    height: 182px;
+}
+.catalog__item {
+    background-color: rgba(255, 255, 255, .925);
+}
+.about__name {
+    font-family: 'Roboto Slab','Arial',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+
+    margin-top: 7px;
+    margin-left: 36px;
+
+    letter-spacing: 1px;
+
+    color: #00a2dd;
+}
+.about__name::after {
+    padding: 11px;
+
+    content: url(../../../assets/img/main/catalog/05.svg);
+}
+.about__discription {
+    font-family: 'Raleway','Arial',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-top: -4px;
+    margin-left: 41px;
+
+    letter-spacing: .5px;
+
+    color: #0d3351;
+}
+.about__price {
+    font-family: 'Roboto Slab','Arial',sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+
+    margin-top: 8px;
+    margin-left: 38px;
+
+    letter-spacing: 1.5px;
+
+    color: #0d3351;;
+}
+.about__price_on-sale::after {
+    font-family: 'Roboto Slab','Arial',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+
+    margin-left: 33px;
+
+    content: '10000 руб.';
+    text-align: center;
+    text-decoration: line-through;
+    letter-spacing: 1px;
+
+    color: #767d83;;
+}
+.about__price_stock::after {
+    font-family: 'Roboto Slab','Arial',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+
+    margin-left: 28px;
+
+    content: '15000 руб.';
+    text-align: center;
+    text-decoration: line-through;
+    letter-spacing: 1px;
+
+    color: #767d83;;
+}
