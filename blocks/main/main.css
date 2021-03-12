@@ -31,7 +31,7 @@
 .main__sort::after {
     padding-left: 7px; 
     
-    content: url(../../assets/img/catalog/03.svg);
+    content: url(../../assets/img/main/03.svg);
 }
 .main__catalog {
     margin-left: auto;

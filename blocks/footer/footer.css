@@ -1,0 +1,38 @@
+.footer {
+    height:130px;
+    width:1140px;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info {
+    display: flex;
+}
+.menu__item { 
+    font-weight: 400;
+    font-family: "Raleway","Arial",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 24px;
+    
+    color: #0d3351;
+}
+.socials__title {
+    font-weight: 400;
+    font-family: "Raleway","Arial",sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+
+    color: #0d3351;
+}
+.socials__item{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 15px;
+
+    background-color: #0d3351;
+}
