@@ -10,8 +10,13 @@
     background-color: transparent;
     border: none;
 }
-@media (min-width: 301px) and (max-width: 1300px) {
+@media (min-width: 321px) and (max-width: 1300px) {
     .header__burger-menu {
+        visibility:visible;
+    }
+}
+@media (max-width:320px){
+    .header__burger-menu{
         visibility:visible;
     }
 }
