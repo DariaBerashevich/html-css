@@ -28,16 +28,15 @@
     <header class="header">
         <div class="header__container">
             <div class="header__burger-menu">
-                <button class="burger-menu__icon"><img src="assets/img/header/menu.svg"
-                        alt="Иконка бургер меню"></button>
-            </div>
-            <div class="header__info">
-                <nav class="header__navigation navigation">
+                <label class="menu__btn burger-menu__icon" for="menu__toggle">   <span></span></label>
+            </div> 
+            <input id="menu__toggle" type="checkbox" />
+            <div class="menu__box header__info">
+                <nav class="menu__item header__navigation navigation"> 
                     <button class="navigation__item navigation__item_account">Личный кабинет</button>
                     <button class="navigation__item navigation__item_currency">Рубль</button>
                     <button class="navigation__item navigation__item_language">Ru</button>
                 </nav>
-
                 <div class="header__support support">
                     <div><a class="support__phone-number" href="tel:88005006105">8 800 500-61-05</a></div>
                 </div>

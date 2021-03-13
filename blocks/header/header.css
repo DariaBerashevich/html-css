@@ -51,8 +51,6 @@ margin-top:4px;
     margin-right: auto;
 }
 .decor-line {
-    z-index: 2;
-
     margin-right: auto;
     margin-left:auto;
     position: absolute;
@@ -147,7 +145,7 @@ margin-top:4px;
         top: 399px;
         right: 20px;
     } 
-    .header__info {
-        display: none;
+    .header__support{
+        margin-left: 50px;
     }
 }
