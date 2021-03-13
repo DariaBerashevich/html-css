@@ -67,3 +67,11 @@
 .footer__container{
     margin-right:-10px;
 }
+@media (min-width:301px) and (max-width:1300px) {
+    .footer {
+        width: 720px;;
+    }
+    .footer__info {
+        width:369px;
+    }
+}

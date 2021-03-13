@@ -140,7 +140,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         width:720px;
-        height:1060px;
+        height:1090px;
     }
     .catalog__item:nth-child(2){
         order: 1;
@@ -153,10 +153,10 @@
     }
     .item__about {
         width:345px;
-        height:228px;
+        height:213px;
     }
     .catalog__item {
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
     .catalog__item_bestseller::before {
         margin-left:223px;
@@ -175,18 +175,25 @@
         content: url(../../../assets/img/main/catalog/sale_tag.png);
     }
     .about__name {
-
+        height: 48px;
+        width: 286px;
+        margin-top: 24px;
+        line-height: 23px;
     }
     .about__discription {
-      
+        height: 70px;
+        width: 263px;
+        margin-left: 34px;
+        margin-top: 3px;
     }
     .about__price {
-       
+        margin-top: 10px;
+        margin-left: 36px;
     }
     .about__price_on-sale::after {
-      
+      margin-left: 13px;
     }
     .about__price_stock::after {
-              
+        margin-left: 13px;      
     }
 }
