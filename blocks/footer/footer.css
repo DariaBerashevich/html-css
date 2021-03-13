@@ -77,10 +77,10 @@
 }
 @media (max-width:320px) {
     .footer {
+        height:200px;
         width: 244px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     .footer__menu {
         display: none;
@@ -94,10 +94,11 @@
     .footer__container {
         margin-top: -11px;
         margin-left: 59px;
+        height: 200px;
     }
     .footer__sign {
         letter-spacing: 0.55px;
-        
+
         margin-top: 3px;
         margin-left: -57px;
     }
