@@ -108,7 +108,7 @@ margin-top:4px;
         margin-top:26px;
     }
 }
-@media (max-width:320px){
+@media (max-width:320px) {
     .body {
         max-width: 320px;
     }
@@ -121,19 +121,31 @@ margin-top:4px;
        width: 292px;
     }
     .header__logo {
-        
+        width:70px;
+        height: 70px;
+        margin-top: -39px;
     }
     .header__title {
-           
+        margin-top:-2px;
     }
     .header__subtitle {
-      font-size: 50px;
+        font-size: 50px;
+        letter-spacing: -2px;
+        line-height: 48px;
+
+        margin-top: 3px;
     }
     .header__button {
-      
+        height: 222px;
+        width:45px;
+        margin-top:39px;
     }
     .decor-line {
-       
+        height: 222px;
+        width: 45px;
+
+        top: 399px;
+        right: 20px;
     } 
     .header__info {
         display: none;

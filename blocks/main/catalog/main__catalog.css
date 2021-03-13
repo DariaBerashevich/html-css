@@ -44,7 +44,10 @@
     
     pointer-events: none;
 }
-.item__photo_tablet{
+.item__photo_tablet {
+    display: none;
+}
+.item__photo_mobile {
     display: none;
 }
 .item__about {
@@ -128,11 +131,14 @@
 
     color: #767d83;
 }
-@media (min-width:301px) and (max-width:1300px) {
-     .item__photo_tablet{
+@media (min-width:321px) and (max-width:1300px) {
+     .item__photo_tablet {
         display: block;
     }
-    .item__photo_dekstop{
+    .item__photo_dekstop {
+        display: none;
+    }
+    .item__photo_mobile {
         display: none;
     }
     .catalog {
@@ -142,10 +148,10 @@
         width:720px;
         height:1090px;
     }
-    .catalog__item:nth-child(2){
+    .catalog__item:nth-child(2) {
         order: 1;
     }
-    .catalog__item:nth-child(4){
+    .catalog__item:nth-child(4) {
         order: 1;
     }
     .catalog__item:nth-child(5) {
@@ -195,5 +201,71 @@
     }
     .about__price_stock::after {
         margin-left: 13px;      
+    }
+}
+@media (max-width:320px) {
+    .item__photo_tablet {
+        display: none;
+    }
+    .item__photo_dekstop {
+        display: none;
+    }
+    .item__photo_mobile {
+        display: block;
+    }
+    .catalog__item:nth-child(5) {
+        display: none;
+    }
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        width:290px;
+        height:1921px;
+    }
+    .item__about {
+        height:211px;
+        width:285px;
+    }
+    .catalog__item {
+        margin-bottom: 3px;
+    }
+    .catalog__item_bestseller::before {
+        margin-left:177px;
+        margin-top:-7px;
+    
+        content: url(../../../assets/img/main/catalog/bestseller_tag.png);
+    }
+    .catalog__item_stock::before {
+        margin-left:177px;
+        margin-top:-7px; 
+    }
+    .catalog__item_on-sale::before {
+        margin-left:177px;
+        margin-top:-7px;
+    
+        content: url(../../../assets/img/main/catalog/sale_tag.png);
+    }
+    .about__name {
+        height: 48px;
+        width: 267px;
+        margin-top: 25px;
+        line-height: 23px;
+        margin-left: 21px;
+    }
+    .about__discription {
+        height: 70px;
+        width: 263px;
+        margin-left: 23px;
+        margin-top: 3px;
+    }
+    .about__price {
+        margin-top: 7px;
+        margin-left: 21px;
+    }
+    .about__price_on-sale::after {
+      margin-left: 6px;
+    }
+    .about__price_stock::after {
+        margin-left: 6px;      
     }
 }

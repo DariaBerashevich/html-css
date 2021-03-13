@@ -15,8 +15,11 @@
         visibility:visible;
     }
 }
-@media (max-width:320px){
-    .header__burger-menu{
+@media (max-width:320px) {
+    .header__burger-menu {
         visibility:visible;
+    }
+    .burger-menu__icon {
+        margin-top:27px;
     }
 }
