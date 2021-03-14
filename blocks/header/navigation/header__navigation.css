@@ -30,3 +30,16 @@
 
     content: url(../../../assets/img/header/Р.svg);
 }
+.navigation__item:hover {
+    font-weight: bolder;
+
+    background-color: rgb(218, 238, 238);
+
+    cursor: pointer;
+}
+.navigation__item:focus {
+    color: white;
+    background-color: #1e67a0;
+
+    cursor: pointer;
+}

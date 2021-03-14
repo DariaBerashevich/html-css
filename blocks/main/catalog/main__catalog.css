@@ -50,6 +50,12 @@
 .item__photo_mobile {
     display: none;
 }
+.item__photo:hover {
+    box-shadow: 0px 0px 12px rgb(133, 130, 130);
+}
+.item__photo:hover {
+    box-shadow: 0px 0px 15px rgb(46, 45, 45);
+}
 .item__about {
     width: 554px;
     height: 182px;
@@ -69,6 +75,18 @@
     letter-spacing: 1px;
 
     color: #00a2dd;
+}
+.about__name:hover {
+    font-weight: bold;
+    text-shadow: 0px 1px 0.5px black;
+
+    color:rgb(51, 139, 190);
+}
+.about__name:focus {
+    font-weight: bold;
+    text-shadow: 0px 1px 0.5px black;
+
+    color:rgb(54, 173, 127);
 }
 .about__name::after {
     padding: 11px;

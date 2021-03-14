@@ -33,6 +33,21 @@
     
     content: url(../../assets/img/main/03.svg);
 }
+.main__sort:hover {
+    font-weight: bold;
+
+    background-color: rgb(218, 218, 218);
+
+    cursor: pointer;
+}
+.main__sort:focus {
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(168, 166, 166);
+
+    cursor: pointer;
+}
 .main__catalog {
     margin-left: auto;
     margin-right: auto;

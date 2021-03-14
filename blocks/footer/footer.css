@@ -21,6 +21,16 @@
     
     color: #0d3351;
 }
+.menu__item:hover {
+    font-weight: bolder;
+
+    color: #1c6297;
+}
+.menu__item:focus {
+    font-weight: bolder;
+
+    color: #0d2c44;
+}
 .socials__title {
     font-weight: 400;
     font-family: "Raleway","Arial",sans-serif;
@@ -44,6 +54,15 @@
     border-radius: 15px;
 
     background-color: #0d3351;
+}
+.socials__item:hover {
+    box-shadow: 1px 1px 15px #0d3351;
+
+    transform: scale(1.2);
+}
+.socials__item:active {
+    box-shadow: 1px 1px 15px rgb(0, 0, 0),
+    0px 0px 10px black;   
 }
 .socials__container {
     display:flex;
