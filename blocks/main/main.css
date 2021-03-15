@@ -64,7 +64,7 @@
 
    content: url(../../assets/img/main/catalog/04.svg);
 }
-@media (min-width:321px) and (max-width:1300px) {
+@media (min-width:769px) and (max-width:1300px) {
     .main {
     min-height: 1321px;
     }
@@ -79,6 +79,23 @@
     }
     .main__button {
     margin-top:-24px;
+    }
+}
+@media (min-width:321px) and (max-width:768px) {
+    .main {
+    min-height: 2149px;
+    }
+    .main__title {
+    padding-top: 38px;
+    }
+    .main__sort {
+    margin-top: -13px;
+    }
+    .main__catalog {
+    margin-top:21px;
+    }
+    .main__button {
+    margin-top:21px;
     }
 }
 @media (max-width:320px) {

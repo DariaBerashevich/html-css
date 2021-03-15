@@ -86,7 +86,7 @@
 .footer__container {
     margin-right:-10px;
 }
-@media (min-width:321px) and (max-width:1300px) {
+@media (min-width:769px) and (max-width:1300px) {
     .footer {
         width: 720px;
     }
@@ -94,7 +94,7 @@
         width:369px;
     }
 }
-@media (max-width:320px) {
+@media (max-width:768px) {
     .footer {
         height:200px;
         width: 244px;

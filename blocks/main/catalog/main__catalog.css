@@ -149,7 +149,7 @@
 
     color: #767d83;
 }
-@media (min-width:321px) and (max-width:1300px) {
+@media (min-width:769px) and (max-width:1300px) {
      .item__photo_tablet {
         display: block;
     }
@@ -221,7 +221,7 @@
         margin-left: 13px;      
     }
 }
-@media (max-width:320px) {
+@media (max-width:768px) {
     .item__photo_tablet {
         display: none;
     }
