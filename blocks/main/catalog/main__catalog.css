@@ -19,8 +19,8 @@
 }
 .catalog__item_bestseller::before {
     position: absolute;
-    margin-left:418px;
-    margin-top:-7px;
+    margin-left: 418px;
+    margin-top: -7px;
 
     content: url(../../../assets/img/main/catalog/bestseller_tag.png);
 
@@ -28,8 +28,8 @@
 }
 .catalog__item_stock::before {
     position: absolute;
-    margin-left:418px;
-    margin-top:-7px; 
+    margin-left: 418px;
+    margin-top: -7px; 
 
     content: url(../../../assets/img/main/catalog/stock_tag.png);
 
@@ -37,8 +37,8 @@
 }
 .catalog__item_on-sale::before {
     position: absolute;
-    margin-left:418px;
-    margin-top:-7px;
+    margin-left: 418px;
+    margin-top: -7px;
 
     content: url(../../../assets/img/main/catalog/sale_tag.png);
     
@@ -149,7 +149,7 @@
 
     color: #767d83;
 }
-@media (min-width:769px) and (max-width:1300px) {
+@media (min-width:768px) and (max-width:1300px) {
      .item__photo_tablet {
         display: block;
     }
@@ -163,8 +163,8 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width:720px;
-        height:1090px;
+        width: 720px;
+        height: 1090px;
     }
     .catalog__item:nth-child(2) {
         order: 1;
@@ -176,25 +176,25 @@
         display: none;
     }
     .item__about {
-        width:345px;
-        height:213px;
+        width: 345px;
+        height: 213px;
     }
     .catalog__item {
         margin-bottom: 5px;
     }
     .catalog__item_bestseller::before {
-        margin-left:223px;
-        margin-top:-7px;
+        margin-left: 223px;
+        margin-top: -7px;
     
         content: url(../../../assets/img/main/catalog/bestseller_tag.png);
     }
     .catalog__item_stock::before {
-        margin-left:223px;
-        margin-top:-7px; 
+        margin-left: 223px;
+        margin-top: -7px; 
     }
     .catalog__item_on-sale::before {
-        margin-left:223px;
-        margin-top:-7px;
+        margin-left: 223px;
+        margin-top: -7px;
     
         content: url(../../../assets/img/main/catalog/sale_tag.png);
     }
@@ -221,7 +221,7 @@
         margin-left: 13px;      
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .item__photo_tablet {
         display: none;
     }
@@ -237,29 +237,29 @@
     .catalog {
         display: flex;
         flex-direction: column;
-        width:290px;
-        height:1921px;
+        width: 290px;
+        height: 1921px;
     }
     .item__about {
-        height:211px;
-        width:285px;
+        height: 211px;
+        width: 285px;
     }
     .catalog__item {
         margin-bottom: 3px;
     }
     .catalog__item_bestseller::before {
-        margin-left:177px;
-        margin-top:-7px;
+        margin-left: 177px;
+        margin-top: -7px;
     
         content: url(../../../assets/img/main/catalog/bestseller_tag.png);
     }
     .catalog__item_stock::before {
-        margin-left:177px;
-        margin-top:-7px; 
+        margin-left: 177px;
+        margin-top: -7px; 
     }
     .catalog__item_on-sale::before {
-        margin-left:177px;
-        margin-top:-7px;
+        margin-left: 177px;
+        margin-top: -7px;
     
         content: url(../../../assets/img/main/catalog/sale_tag.png);
     }

@@ -1,16 +1,16 @@
 .footer {
-    height:130px;
-    width:1140px;
-    margin-left:auto;
+    height: 130px;
+    max-width: 1140px;
+    margin-left: auto;
     margin-right: auto;
+    margin-top: 22px;
     display: flex;
     justify-content: space-between;
 }
 .footer__info {
     display: flex;
     justify-content: space-between;
-    width: 442px;
-    margin-top:23px;
+    width: 39%;
 }
 .menu__item { 
     font-weight: 400;
@@ -38,8 +38,6 @@
     letter-spacing: 0.6px;
     line-height: 24px;
 
-    margin-left:9px;
-
     color: #0d3351;
 }
 .socials__item {
@@ -48,12 +46,15 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    margin-left:10px;
-    margin-top:5px;
+    margin-left: 10px;
+    margin-top: 5px;
 
     border-radius: 15px;
 
     background-color: #0d3351;
+}
+.socials__item:first-child {
+    margin-left: 0px;
 }
 .socials__item:hover {
     box-shadow: 1px 1px 15px #0d3351;
@@ -65,12 +66,11 @@
     0px 0px 10px black;   
 }
 .socials__container {
-    display:flex;
+    display: flex;
 }
 .footer__support {
-    margin-top: 27px;
-
     line-height: 19px;
+    margin-top: 5px;
 }
 .footer__sign {
     font-size: 14px;
@@ -83,23 +83,22 @@
 
     color: #0d3351;
 }
-.footer__container {
-    margin-right:-10px;
-}
-@media (min-width:769px) and (max-width:1300px) {
+@media (min-width:768px) and (max-width:1300px) {
     .footer {
-        width: 720px;
+        max-width: 720px;
     }
     .footer__info {
-        width:369px;
+        width: 50%;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .footer {
-        height:200px;
-        width: 244px;
+        height: 200px;
+        max-width: 244px;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
     }
     .footer__menu {
         display: none;
@@ -107,18 +106,16 @@
     .footer__info {
         text-align: center;
         
-        width: 200px;
-        margin-left: 37px;
-    }
-    .footer__container {
-        margin-top: -11px;
-        margin-left: 59px;
-        height: 200px;
+        width: 80%; 
     }
     .footer__sign {
         letter-spacing: 0.55px;
 
         margin-top: 3px;
-        margin-left: -57px;
+    }
+    .footer__support{
+        text-align: center;
+
+        margin-top: 15px;
     }
 }

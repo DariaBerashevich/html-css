@@ -9,13 +9,13 @@
 
     color: #0d3351;
 }
-@media (min-width: 769px) and (max-width: 1300px) {
+@media (min-width: 768px) and (max-width: 1300px) {
     .title { 
         font-size: 26px;
         letter-spacing: 1px;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .title {
         font-size: 20px;
         letter-spacing: 1px;
