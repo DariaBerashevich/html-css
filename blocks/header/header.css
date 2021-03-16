@@ -152,7 +152,7 @@ body {
      }
 }
 @media (max-width:320px) {
-    .body {
+    body {
         max-width: 320px;
     }
     .header {
