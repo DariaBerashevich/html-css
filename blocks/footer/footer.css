@@ -1,9 +1,7 @@
 .footer {
     height: 130px;
     max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 22px;
+    margin: 22px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -88,7 +86,7 @@
         max-width: 720px;
     }
     .footer__info {
-        width: 50%;
+        width: 51%;
     }
 }
 @media (max-width:767px) {

@@ -45,10 +45,11 @@ body {
     color: #0d3351;
 }
 .header__button {
-    display: block;
-    margin-top: 33px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    height: 33px;
+    margin: 29px auto;
+    align-items: center;
+    justify-content: center;
 }
 .decor-line {
     margin-right: auto;
