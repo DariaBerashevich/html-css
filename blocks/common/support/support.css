@@ -12,9 +12,19 @@
 .support::after {
     font-size: 9px;
 
-    content: 'Круглосуточная поддежка';
+    content: 'Круглосуточная поддержка';
 }
-.support__phone-number{
+.support__phone-number {
     text-decoration: none;
     color: #0d3351;
+}
+.support:hover{
+    text-shadow: 0px 0px 2px rgb(156, 154, 154);
+    
+    transform: scale(1.2);
+}
+.support:focus{
+    text-shadow: 0px 0px 5px rgb(7, 87, 76);
+    
+    transform: scale(1.2);
 }

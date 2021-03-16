@@ -12,6 +12,8 @@
     color: white;
     border: none;
     background-color: #33c7fd;
+
+    cursor: pointer;
 }
 .button:hover {
     background-color: #13b0e9;
@@ -20,3 +22,4 @@
     border: none;
     background-color: #64d6ff;
 }
+

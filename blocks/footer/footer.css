@@ -1,0 +1,119 @@
+.footer {
+    height: 130px;
+    max-width: 1140px;
+    margin: 22px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+}
+.menu__item { 
+    font-weight: 400;
+    font-family: "Raleway","Arial",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 24px;
+    
+    color: #0d3351;
+}
+.menu__item:hover {
+    font-weight: bolder;
+
+    color: #1c6297;
+}
+.menu__item:focus {
+    font-weight: bolder;
+
+    color: #0d2c44;
+}
+.socials__title {
+    font-weight: 400;
+    font-family: "Raleway","Arial",sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 24px;
+
+    color: #0d3351;
+}
+.socials__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    border-radius: 15px;
+
+    background-color: #0d3351;
+}
+.socials__item:first-child {
+    margin-left: 0px;
+}
+.socials__item:hover {
+    box-shadow: 1px 1px 15px #0d3351;
+
+    transform: scale(1.2);
+}
+.socials__item:active {
+    box-shadow: 1px 1px 15px rgb(0, 0, 0),
+    0px 0px 10px black;   
+}
+.socials__container {
+    display: flex;
+}
+.footer__support {
+    line-height: 19px;
+    margin-top: 5px;
+}
+.footer__sign {
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Raleway";
+
+    margin-top: 4px;
+
+    color: #0d3351;
+}
+@media (min-width:768px) and (max-width:1300px) {
+    .footer {
+        max-width: 720px;
+    }
+    .footer__info {
+        width: 51%;
+    }
+}
+@media (max-width:767px) {
+    .footer {
+        height: 200px;
+        max-width: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+    }
+    .footer__menu {
+        display: none;
+    }
+    .footer__info {
+        text-align: center;
+        
+        width: 80%; 
+    }
+    .footer__sign {
+        letter-spacing: 0.55px;
+
+        margin-top: 3px;
+    }
+    .footer__support{
+        text-align: center;
+
+        margin-top: 15px;
+    }
+}
