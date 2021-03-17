@@ -1,20 +1,19 @@
-@color_subtitle: #0d3351;
+@color_1: #0d3351;
 @font_family_1: 'Roboto Slab','Arial', sans-serif;
-@bg_color_body: white;
-@images: "../../assets/img/header";
+@background_color_1: white;
 
 body {
 	max-width: 1673px;
 	margin: 0 auto;
 
-	background-color: @bg_color_body;
+	background-color: @background_color_1;
 }
 .header {
 	z-index: 1;
 	width: 100%;
 	height: 648px;
 
-	background-image: url("@{images}/sochi-2258855.png");
+	background-image: url(../../assets/img/header/sochi-2258855.png);
     
     &__container {
         height: 65px;
@@ -46,7 +45,7 @@ body {
         margin-bottom: 0;
 
         
-        color: @color_subtitle;
+        color: @color_1;
 }
     &__button {
         display: flex;
@@ -75,7 +74,7 @@ body {
 	}
 	.header {
 		height: 600px;
-		background-image: url("@{images}/header_tablet.png");
+		background-image: url(../../assets/img/header/header_tablet.png);
         
         &__container {
 		    max-width: 722px;
@@ -116,7 +115,7 @@ body {
 	.header {
 		height: 584px;
 
-		background-image: url("@{images}/header_tablet.png");
+		background-image: url(../../assets/img/header/header_tablet.png);
         
         &__container {
 		    width: 292px;
@@ -159,7 +158,7 @@ body {
 	.header {
 		height: 583px;
 
-		background-image: url("@{images}/header_mobile.png");
+		background-image: url(../.././assets/img/header/header_mobile.png);
         
         &__container {
 		    width: 292px;
