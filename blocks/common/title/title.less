@@ -1,0 +1,26 @@
+@color_1: #0d3351;
+@font_family_1: 'Roboto Slab','Arial', sans-serif;
+
+.title {
+	font-family: @font_family_1;
+	font-size: 36px;
+	font-weight: 400;
+
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 2px;
+    
+	color: @color_1;
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+	.title {
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+}
+@media (max-width:767px) {
+	.title {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+}

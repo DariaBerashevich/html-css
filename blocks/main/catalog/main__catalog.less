@@ -1,0 +1,320 @@
+@color_1: #00a2dd;
+@color_2: rgb(51, 139, 190);
+@color_3: rgb(54, 173, 127);
+@color_4: #0d3351;
+@color_5: #767d83;
+@font_family_1: 'Roboto Slab','Arial',sans-serif;
+@font_family_2: 'Raleway','Arial',sans-serif;
+@background_color_1: rgba(255, 255, 255, .925);
+
+.catalog {
+	display: grid;
+	max-width: 1140px;
+	min-height: 1056px;
+	grid-template-columns: 48.7% 48.7%;
+	grid-template-rows: 28.8% 28.8% 38.5%;
+	grid-gap: 20px 29px;
+	grid-template-areas: "first ." "first ." ". .";
+        &__item {
+            background-color: @background_color_1;
+            position: relative;
+
+            &_bestseller {
+                grid-area: first;
+                z-index: 1;
+                    &::before {
+                        position: absolute;
+                        left: 418px;
+                        top: -7px;
+    
+                        content: url(../../../assets/img/main/catalog/bestseller_tag.png);
+                        pointer-events: none;
+        }
+    }
+            &_stock {
+                    &::before {
+                        position: absolute;
+                        left: 418px;
+                        top: -7px;
+    
+                        content: url(../../../assets/img/main/catalog/stock_tag.png);
+                        pointer-events: none;
+        }
+    }
+            &_on-sale {
+                &::before {
+                    position: absolute;
+                    left: 418px;
+                    top: -7px;
+    
+                    content: url(../../../assets/img/main/catalog/sale_tag.png);
+                    pointer-events: none;
+            }
+        }
+    }  
+}
+.item {
+    &__photo {
+        &:hover {
+            box-shadow: 0px 0px 15px rgb(133, 130, 130);
+        }
+        &:focus {
+            box-shadow: 0px 0px 15px rgb(46, 45, 45);
+        }
+        &_tablet {
+            display: none;
+        }
+        &_mobile {
+            display: none;
+        }
+
+    }
+    &__about {
+        width: 554px;
+        padding-left: 35px;
+    }
+}
+.about {
+    &__name {
+        font-family: @font_family_1;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+
+        margin-top: 7px;
+        letter-spacing: 1px;
+
+        color: @color_1;
+        &:hover {
+            font-weight: 600;
+
+            text-shadow: 0px 1px 0.5px black;
+            color: @color_2;
+        }
+        &:focus {
+            font-weight: 600;
+
+            text-shadow: 0px 1px 0.5px black;
+            color: @color_3;
+        }
+        &::after {
+            padding: 11px;
+
+            content: url(../../../assets/img/main/catalog/05.svg);
+        }
+    }
+    &__description {
+        font-family: @font_family_2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+
+        margin-top: -4px;
+        letter-spacing: .5px;
+
+        color: @color_4;
+    }
+    &__price {
+        font-family: @font_family_1;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 48px;
+
+        margin-top: 8px;
+        letter-spacing: 1.5px;
+
+        color: @color_4;
+
+        &_on-sale {
+            &::after {
+                font-family: @font_family_1;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 48px;
+
+                margin-left: 33px;
+
+                content: '10000 руб.';
+
+                text-align: center;
+                text-decoration: line-through;
+                letter-spacing: 1px;
+
+                color: @color_5;
+        }
+    }
+            &_stock {
+                &::after {
+                font-family: @font_family_1;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 48px;
+
+                margin-left: 28px;
+
+                content: '15000 руб.';
+
+                text-align: center;
+                text-decoration: line-through;
+                letter-spacing: 1px;
+
+                color: @color_5;
+            }
+        }
+    } 
+}
+@media (min-width:768px) and (max-width:1300px) {
+.catalog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 720px;
+	height: 1090px;
+        &__item {
+            margin-bottom: 5px;
+                &:nth-child(2) {
+                    order: 1;
+                }
+                &:nth-child(4) {
+                    order: 1;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }  
+   	            &_bestseller {
+	                &::before {
+                        left: 223px;
+                        top: -7px;
+                    }
+                }       
+	            &_stock {
+		            &::before {
+                        left: 223px;
+                        top: -7px;
+		            }
+	            }
+	            &_on-sale {
+		            &::before {
+                        left: 223px;
+                        top: -7px;
+		            }
+	            }
+        }
+}
+.item {
+    &__photo_tablet {
+        display: block;
+        }
+    &__photo_dekstop {
+        display: none;
+        }
+    &__photo_mobile {
+        display: none;
+        }
+    &__about {
+        width: 310px;
+        height: 220px;
+        padding-top: 16px;
+        }
+}
+.about {
+    &__name {
+        height: 48px;
+        width: 300px;
+        line-height: 23px;
+    }
+    &__description {
+        height: 70px;
+        width: 263px;
+        margin-top: 3px;
+    }
+    &__price {
+        margin-top: 10px; 
+            &_on-sale {
+                &::after {
+                    margin-left: 13px;
+                }
+            }
+            &_stock {
+                &::after {
+                    margin-left: 13px;
+                }
+            }  
+    }
+}	
+}
+@media (max-width:767px) {
+    .item{
+      	&__photo_tablet {
+		    display: none;
+	}
+	    &__photo_dekstop {
+		    display: none;
+	}
+	    &__photo_mobile {
+		    display: block;
+	}  
+        &__about {
+            height: 211px;
+            width: 275px;
+            padding-left: 21px;
+    	}
+    }
+	.catalog {
+		display: flex;
+		flex-direction: column;
+		width: 290px;
+		height: 1921px;
+        	&__item {
+                margin-bottom: 3px;
+
+		            &:nth-child(5) {
+			            display: none;
+		            }
+                    &_bestseller {
+                        &::before {
+                            left: 177px;
+                            top: -7px;
+                        }
+                    }
+                    &_stock {
+                        &::before {
+                            left: 177px;
+                            top: -7px;
+                        }
+                    }
+                    &_on-sale {
+                        &::before {
+                            left: 177px;
+                            top: -7px;
+                        }
+                    }
+	        }
+	}
+	.about{
+        &__name {
+            height: 48px;
+            width: 275px;
+            margin-top: 23px;
+            line-height: 23px;
+        }
+        &__description {
+            height: 70px;
+            width: 263px;
+            margin-top: 3px;
+        }
+        &__price {
+            margin-top: 11px;
+                &_on-sale {
+                    &::after {
+                        margin-left: 6px;
+                }
+            }
+                &_stock {
+                    &::after {
+                        margin-left: 6px;
+                }
+            }  
+        }    
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" width="8" height="5">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="2">
+		<g id="button">
+			<path id="Многоугольник 1 копия 5" class="shp0" d="M4 5L0 0L8 0L4 5Z" />
+		</g>
+	</g>
+</svg>

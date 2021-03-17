@@ -1,0 +1,196 @@
+@color_1: #0d3351;
+@font_family_1: 'Roboto Slab','Arial', sans-serif;
+@background_color_1: white;
+
+body {
+	max-width: 1673px;
+	margin: 0 auto;
+
+	background-color: @background_color_1;
+}
+.header {
+	z-index: 1;
+	width: 100%;
+	height: 648px;
+
+	background-image: url(../../assets/img/header/sochi-2258855.png);
+    
+    &__container {
+        height: 65px;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+}
+    &__support {
+	    margin-left: 34px;
+}
+    &__logo {
+        margin: 21px auto 0;
+        display: block;
+}
+    &__title {
+	    margin-top: 4px;
+}
+    &__subtitle {
+        font-family: @font_family_1;
+        font-size: 100px;
+        font-weight: 400;
+		text-align: center;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+
+        margin-top: 16px;
+        margin-bottom: 0;
+
+        
+        color: @color_1;
+}
+    &__button {
+        display: flex;
+        height: 33px;
+        margin: 29px auto;
+        align-items: center;
+        justify-content: center;
+}
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+}
+}
+.decor-line {
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+	left: 0;
+	right: 10px;
+	top: 470px;
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+	body {
+		max-width: 1300px;
+	}
+	.header {
+		height: 600px;
+		background-image: url(../../assets/img/header/header_tablet.png);
+        
+        &__container {
+		    max-width: 722px;
+	}
+	    &__logo {
+            width: 70px;
+            height: 70px;
+            margin-top: 78px;
+	}
+	    &__title {
+            letter-spacing: 1.5px;
+            margin-top: 0;
+	}
+	    &__subtitle {
+            font-size: 72px;
+            letter-spacing: -2px;
+
+            margin-top: -15px;
+	}
+	    &__button {
+		    margin-top: 5px;
+	}
+        &__info {
+		    margin-top: 26px;
+	}
+	}
+	.decor-line {
+		width: 45px;
+		height: 222px;
+		right: 20px;
+		top: 415px;
+	}
+}
+@media (min-width:321px) and (max-width:767px) {
+	body {
+		max-width: 767px;
+	}
+	.header {
+		height: 584px;
+
+		background-image: url(../../assets/img/header/header_tablet.png);
+        
+        &__container {
+		    width: 292px;
+	}
+	    &__logo {
+            width: 70px;
+            height: 70px;
+            margin-top: -16px;
+	}
+	    &__title {
+		    margin-top: -2px;
+	}
+	    &__subtitle {
+            font-size: 50px;
+            letter-spacing: -2px;
+            line-height: 48px;
+
+            margin-top: 20px;
+	}
+	    &__button {
+            height: 222px;
+            width: 45px;
+            margin-top: 20px;
+	}
+	    &__support {
+		    margin-left: 50px;
+	}
+	}
+    .decor-line {
+		height: 222px;
+		width: 45px;
+		top: 399px;
+		right: 20px;
+	}
+}
+@media (max-width:320px) {
+	body {
+		max-width: 320px;
+	}
+	.header {
+		height: 583px;
+
+		background-image: url(../.././assets/img/header/header_mobile.png);
+        
+        &__container {
+		    width: 292px;
+	}
+	    &__logo {
+            width: 70px;
+            height: 70px;
+            margin-top: -39px;
+	}
+	    &__title {
+		    margin-top: -2px;
+	}
+	    &__subtitle {
+            font-size: 50px;
+            letter-spacing: -2px;
+            line-height: 48px;
+			
+            margin-top: 3px;
+	}
+	    &__button {
+            height: 222px;
+            width: 45px;
+            margin-top: 39px;
+	}
+	    &__support {
+		    margin-left: 50px;
+	}
+	}
+	.decor-line {
+		height: 222px;
+		width: 45px;
+		top: 399px;
+		right: 20px;
+	}
+}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta lang="ru">
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="reset.css" rel="stylesheet">
     <link href="blocks/header/header.css" rel="stylesheet">
     <link href="blocks/header/burger-menu/header__burger-menu.css" rel="stylesheet">
@@ -12,53 +12,173 @@
     <link href="blocks/common/support/support.css" rel="stylesheet">
     <link href="blocks/common/title/title.css" rel="stylesheet">
     <link href="blocks/main/main.css" rel="stylesheet">
+    <link href="blocks/main/catalog/main__catalog.css" rel="stylesheet">
+    <link href="blocks/footer/footer.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
         rel="stylesheet">
     <title>Морские прогулки</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header__container">
-        <div class="header__burger-menu">
-            <button class="burger-menu__icon"><img src="assets/img/header/menu.svg"
-                alt="Иконка бургер меню"></button>
+            <div class="header__burger-menu">
+                <label class="menu__btn" for="menu__toggle"><img class="burger-menu__icon"
+                        src="assets/img/header/menu.svg" alt="Бургер-меню"></label>
+            </div>
+            <input id="menu__toggle" type="checkbox" />
+            <div class="menu__box header__info">
+                <nav class="menu__item header__navigation navigation">
+                    <button class="navigation__item navigation__item_account">Личный кабинет</button>
+                    <button class="navigation__item navigation__item_currency">Рубль</button>
+                    <button class="navigation__item navigation__item_language">Ru</button>
+                </nav>
+                <div class="header__support support">
+                    <div><a class="support__phone-number" href="tel:88005006105">8 800 500-61-05</a></div>
+                </div>
+            </div>
         </div>
-        <div class="header__info">
-        <nav class="header__navigation navigation">
-            <button class="navigation__item navigation__item_account">Личный кабинет</button>
-            <button class="navigation__item navigation__item_currency">Рубль</button>
-            <button class="navigation__item navigation__item_language">Ru</button>
-        </nav>
-            
-        <div class="header__support support">
-            <div><a class="support__phone-number" href="tel:88005006105">8 800 500-61-05</a></div>
-        </div>
-    </div>
-    </div>
-        <img class="header__logo"  src="assets/img/header/logo.svg" alt="Логотип сайта">
-        <h2 class="header__title title">Морские прогулки</h2>   
-        <h1 class="header__subtitle">По чёрному морю</h1>       
-        <button class="header__button button">Выбрать круиз</button>
+        <img class="header__logo" src="assets/img/header/logo.svg" alt="Логотип сайта">
+        <h2 class="header__title title">Морские прогулки</h2>
+        <h1 class="header__subtitle">По чёрному морю</h1>
+        <a class="header__button button" href="#main">Выбрать круиз</a>
     </header>
-    <main class="main"> 
+    <main id="main" class="main">
         <img class="decor-line" src='assets/img/header/line.svg' alt="извилистая линия">
-        <h3 class="main__title title">Каталог круизов</h3>  
-        <button class="main__sort">Сортировать круизы по цене</button> 
+        <h3 class="main__title title">Каталог круизов</h3>
+        <button class="main__sort">Сортировать круизы по цене</button>
         <div class="main__catalog catalog">
-            <div class="catalog__item item catalog__item_on-sale"></div>
-            <div class="catalog__item item catalog__item_on-sale"></div>
-            <div class="catalog__item item catalog__item_on-sale"></div>
-            <div class="catalog__item item"></div>
-            <div class="catalog__item item"></div>
+            <div class="catalog__item item catalog__item_bestseller">
+                <a class="item__link" href="#"><img class="item__photo item__photo_dekstop" src="assets/img/main/catalog/item1.png"
+                        alt="побережье Анапы">
+                    <img class="item__photo item__photo_tablet" src="assets/img/main/catalog/item1_tablet.png"
+                        alt="побережье Анапы">
+                    <img class="item__photo item__photo_mobile" src="assets/img/main/catalog/item1_mobile.png"
+                        alt="побережье Анапы"></a>
+                <div class="item__about about">
+                    <div class="about__name"><a href="#"> Морской круиз в Анапу</a></div>
+                    <div class="about__description description">
+                        <p class="description__route">
+                            <b>Маршрут: </b> Сочи-Лазаревское-Геленджик-Анапа</a>
+                        </p>
+                        <p class="description__duration">
+                            <b>Продолжительность: </b> 10 ч. 0 мин.</a>
+                        </p>
+                    </div>
+                    <div class="about__price">49 000 руб.</div>
+                </div>
+            </div>
+            <div class="catalog__item item catalog__item_stock">
+                <a class="item__link" href="#"> <img class="item__photo item__photo_dekstop" src="assets/img/main/catalog/item2.svg"
+                        alt="морское побережье">
+                    <img class="item__photo item__photo_tablet" src="assets/img/main/catalog/item2_tablet.png"
+                        alt="морское побережье">
+                    <img class="item__photo item__photo_mobile" src="assets/img/main/catalog/item2_mobile.png"
+                        alt="морское побережье"></a>
+                <div class="item__about about">
+                    <div class="about__name"><a href="#"> Обзорная морская прогулка с экскурсией</a></div>
+                    <div class="about__description description">
+                        <p class="description__route">
+                            <b>Маршрут:</b> Сочи-Адлер-Сочи (без высадки)</a>
+                        </p>
+                        <p class="description__duration">
+                            <b>Продолжительность:</b> 1 ч. 0 мин.</a>
+                        </p>
+                    </div>
+                    <div class="about__price about__price_stock">5 000 руб.</div>
+                </div>
+            </div>
+            <div class="catalog__item item catalog__item_on-sale">
+                <a href="#"> <img class="item__photo item__photo_dekstop" src="assets/img/main/catalog/item3.svg"
+                        alt="побережье Геленджика">
+                    <img class="item__photo item__photo_tablet" src="assets/img/main/catalog/item3_tablet.png"
+                        alt="побережье Геленджика">
+                    <img class="item__photo item__photo_mobile" src="assets/img/main/catalog/item3_mobile.png"
+                        alt="побережье Геленджика"></a>
+                <div class="item__about about">
+                    <div class="about__name"><a href="#"> Морская прогулка в Геленджик</a></div>
+                    <div class="about__description description">
+                        <p class="description__route">
+                            <b>Маршрут:</b> Сочи-Туапсе-Геленджик</a>
+                        </p>
+                        <p class="description__duration">
+                            <b>Продолжительность:</b> 12 ч. 30 мин.</a>
+                        </p>
+                    </div>
+                    <div class="about__price about__price_on-sale">7 000 руб.</div>
+                </div>
+            </div>
+            <div class="catalog__item item">
+                <a href="#"> <img class="item__photo item__photo_dekstop" src="assets/img/main/catalog/item4.svg"
+                        alt="побережье Новороссийска">
+                    <img class="item__photo item__photo_tablet" src="assets/img/main/catalog/item4_tablet.png"
+                        alt="побережье Новороссийска">
+                    <img class="item__photo item__photo_mobile" src="assets/img/main/catalog/item4_mobile.png"
+                        alt="побережье Новороссийска"></a>
+                <div class="item__about about">
+                    <div class="about__name"><a href="#"> Морской круиз в Новороссийск</a></div>
+                    <div class="about__description description">
+                        <p class="description__route">
+                            <b>Маршрут:</b> Сочи-Геленджик-Новороссийск-Геленджик-Сочи
+                        </p>
+                        <p class="description__duration">
+                            <b>Продолжительность:</b> 13 ч. 0 мин.
+                        </p>
+                    </div>
+                    <div class="about__price">14 800 руб.</div>
+                </div>
+            </div>
+            <div class="catalog__item item">
+                <a href="#"> <img class="item__photo item__photo_dekstop" src="assets/img/main/catalog/item5.png"
+                        alt="побережье Абрау-Дюрсо">
+                </a>
+                <div class="item__about about">
+                    <div class="about__name"><a href="#"> Морская прогулка в Абрау-Дюрсо</a></div>
+                    <div class="about__description description">
+                        <p class="description__route">
+                            <b>Маршрут:</b> Сочи-Абрау-Дюрсо
+                        </p>
+                        <p class="description__duration">
+                            <b>Продолжительность:</b> 11 ч. 0 мин.
+                        </p>
+                    </div>
+                    <div class="about__price">14 800 руб.</div>
+                </div>
+            </div>
+        </div>
+        <button class="main__button button">Больше круизов</button>
         </div>
     </main>
     <footer class="footer">
-
+        <div class="footer__info">
+            <nav class="footer__menu menu">
+                <div class="menu__item"><a href="#"> Вход для партнеров</a></div>
+                <div class="menu__item"><a href="#"> О компании</a></div>
+                <div class="menu__item"><a href="#"> Контакты</a></div>
+            </nav>
+            <div class="footer__socials socials">
+                <p class="socials__title">Будь на связи:</p>
+                <div class="socials__container">
+                    <a class="socials__item" href="https://vk.com/"> <img class="socials__icon"
+                            src="assets/img/footer/vk.png" alt="Вконтакте"></a>
+                    <a class="socials__item" href="https://ok.ru/"> <img class="socials__icon"
+                            src="assets/img/footer/ok.png" alt="Одноклассники"></a>
+                    <a class="socials__item" href="https://www.youtube.com/"> <img class="socials__icon"
+                            src="assets/img/footer/yt.png" alt="Ютуб"></a>
+                    <a class="socials__item" href="https://www.instagram.com/"> <img class="socials__icon"
+                            src="assets/img/footer/insta.png" alt="Инстаграм"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div class="footer__support support">
+                <div><a class="support__phone-number" href="tel:88005006105"> 8 800 500-61-05</a></div>
+            </div>
+            <p class="footer__sign"> © 2016 OOO «Городские Круизы»</p>
+        </div>
     </footer>
 </body>
-
 </html>

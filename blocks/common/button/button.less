@@ -1,0 +1,31 @@
+@color_1: white;
+@font_family_1: 'Raleway','Arial', sans-serif;
+@background_color_1: #33c7fd;
+@background_color_2: #13b0e9;
+@background_color_3: #64d6ff;
+
+.button {
+	font-family: @font_family_1;
+	font-size: 14px;
+	font-weight: 400;
+
+	width: 202px;
+	height: 47px;
+
+	text-align: center;
+	letter-spacing: 1px;
+    
+	color: @color_1;
+	border: none;
+	background-color: @background_color_1;
+	cursor: pointer;
+	&:hover {
+		background-color: @background_color_2;
+	}
+	&:active {
+		border: none;
+		background-color: @background_color_3;
+	}
+}
+
+

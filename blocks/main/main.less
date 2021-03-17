@@ -1,0 +1,121 @@
+@color_sort: #0d3351;
+@color_sort_focus: rgb(255, 255, 255);
+@font_family_1: 'Raleway','Arial', sans-serif;
+@bg_color_main: rgb(236, 236, 236);
+@bg_color_sort: transparent;
+@bg_color_sort_hover: rgb(218, 218, 218);
+@bg_color_sort_focus: rgb(168, 166, 166);
+
+.main {
+	z-index: 1;
+
+	min-height: 1408px;
+
+	background-color: @bg_color_main;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 105px;
+}
+    &__sort {
+        font-family: @font_family_1;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+
+        display: block;
+
+        margin-top: -3px;
+        margin-right: auto;
+        margin-left: auto;
+
+        letter-spacing: .6px;
+
+        color: @color_sort;
+        border: none;
+        background-color: @bg_color_sort;
+	    &::after {
+            padding-left: 7px; 
+
+            content: url(../../assets/img/main/03.svg);
+	}
+	    &:hover {
+            font-weight: bold;
+
+            background-color: @bg_color_sort_hover;
+            cursor: pointer;
+	}
+	    &:focus {
+            font-weight: bold;
+
+            color: @color_sort_focus;
+            background-color: @bg_color_sort_focus;
+            cursor: pointer;
+	}
+}   
+        &__catalog {
+	    margin: 32px auto;
+}
+        &__button {
+        display: block;
+
+        margin: -9px auto;
+        &::after {
+            padding-left: 7px; 
+
+            content: url(../../assets/img/main/catalog/04.svg);
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1300px) {
+	.main {
+		min-height: 1321px;
+
+        &__title {
+		    padding-top: 48px;
+	}
+	    &__sort {
+		    margin-top: -11px;
+	}
+	    &__catalog {
+		    margin-top: 26px;
+	}
+	    &__button {
+		    margin-top: -56px;
+	}
+	    }
+}
+@media (min-width:321px) and (max-width:767px) {
+	.main {
+		min-height: 2149px;
+        &__title {
+		    padding-top: 38px;
+	}
+	    &__sort {
+		    margin-top: -13px;
+	}
+	    &__catalog {
+		    margin-top: 21px;
+	}
+	    &__button {
+		    margin-top: 21px;
+	}
+	    }
+}
+@media (max-width:320px) {
+	.main {
+		min-height: 2149px;
+        &__title {
+		    padding-top: 38px;
+	}
+	    &__sort {
+		    margin-top: -13px;
+	}
+	    &__catalog {
+		    margin-top: 21px;
+	}
+	    &__button {
+		    margin-top: -11px;
+	}
+    	}
+}

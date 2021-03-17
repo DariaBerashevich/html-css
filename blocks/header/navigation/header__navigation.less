@@ -1,0 +1,53 @@
+@color_item: #0d3351;
+@color_focus: white;
+@font_family_1: 'Raleway','Arial', sans-serif;
+@bg_color_item: transparent;
+@bg_color_hover: rgb(218, 238, 238);
+@bg_color_focus: #1e67a0;
+
+.navigation__item {
+	font-family: @font_family_1;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 48px;
+
+	text-align: center;
+	letter-spacing: 1px;
+
+	margin-left: 18px;
+	display: inline-block;
+	
+	color: @color_item;
+	background-color: @bg_color_item;
+	border: none;
+	&::after {
+		padding-left: 7px;
+		content: url(../../../assets/img/header/03.svg);
+	}
+	&:hover {
+		font-weight: bolder;
+
+		background-color: @bg_color_hover;
+		cursor: pointer;
+	}
+	&:focus {
+		color: @color_focus;
+
+		background-color: @bg_color_focus;
+		cursor: pointer;
+	}
+}
+.navigation__item_account {
+	&::before {
+		padding-right: 9px;
+
+		content: url(../../../assets/img/header/user.svg);
+	}
+}
+.navigation__item_currency {
+	&::before {
+		padding-right: 10px;
+		
+		content: url(../../../assets/img/header/Р.svg);
+	}
+}

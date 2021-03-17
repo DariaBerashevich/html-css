@@ -76,4 +76,5 @@ q:after {
 a,
 ins {
     text-decoration: none;
+    color: inherit;
 }
