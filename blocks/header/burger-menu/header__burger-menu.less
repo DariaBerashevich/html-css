@@ -1,8 +1,8 @@
-@color_1: #333;
+@color_menu-item: #333;
 @font_family_1: 'Roboto', sans-serif;
 @bg_color_icon: transparent;
-@background_color_2: #ECEFF1;
-@background_color_3: #CFD8DC;
+@bg_color_menu-box: #ECEFF1;
+@bg_color_menu-item: #CFD8DC;
 
 .header__burger-menu {
 	visibility: hidden;
@@ -87,7 +87,7 @@
 		padding: 80px 0;
 		
 		list-style: none;
-		background-color: @background_color_2;
+		background-color: @bg_color_menu-box;
 		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 		transition-duration: .25s;
 	}
@@ -101,9 +101,9 @@
 		padding: 12px 24px;
 		
 		transition-duration: .25s;
-        color: @color_1;
+        color: @color_menu-item;
 		&:hover {
-			background-color: @background_color_3;
+			background-color: @bg_color_menu-item;
 		}
 	}
 }
@@ -164,7 +164,7 @@
 
 	
 		list-style: none;
-		background-color: @background_color_2;
+		background-color: @bg_color_menu-box;
 		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 		transition-duration: .25s;
 	}
@@ -177,10 +177,10 @@
 		display: block;
 		padding: 12px 24px;
 		
-        color: @color_1;
+        color: @color_menu-item;
 		transition-duration: .25s;
 		&:hover {
-			background-color: @background_color_3;
+			background-color: @bg_color_menu-item;
 		}
 	}
 }

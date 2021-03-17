@@ -4,6 +4,7 @@
 @bg_color_item: transparent;
 @bg_color_hover: rgb(218, 238, 238);
 @bg_color_focus: #1e67a0;
+@images: "../../../assets/img/header";
 
 .navigation__item {
 	font-family: @font_family_1;
@@ -22,7 +23,7 @@
 	border: none;
 	&::after {
 		padding-left: 7px;
-		content: url(../../../assets/img/header/03.svg);
+		content: url("@{images}/03.svg");
 	}
 	&:hover {
 		font-weight: bolder;
@@ -41,13 +42,13 @@
 	&::before {
 		padding-right: 9px;
 
-		content: url(../../../assets/img/header/user.svg);
+		content: url("@{images}/user.svg");
 	}
 }
 .navigation__item_currency {
 	&::before {
 		padding-right: 10px;
 		
-		content: url(../../../assets/img/header/Р.svg);
+		content: url("@{images}/Р.svg");
 	}
 }
